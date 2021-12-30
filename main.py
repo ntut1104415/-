@@ -40,7 +40,7 @@ def show():
 
     # Initialize state.
     if "board" not in st.session_state:
-        st.session_state.board = np.full((4, 4), ".", dtype=str)
+        st.session_state.board = np.full((5, 5), ".", dtype=str)
         st.session_state.next_player = "X"
         st.session_state.winner = None
 
@@ -58,7 +58,7 @@ def show():
 
     # Show one button for each field.
     for i, row in enumerate(st.session_state.board):
-        cols = st.beta_columns([0.2, 0.2, 0.2, 0.7])
+        cols = st.beta_columns([0.2, 0.2, 0.2, 0.2])
         for j, field in enumerate(row):
             cols[j].button(
                 field,
