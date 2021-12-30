@@ -58,7 +58,7 @@ def show():
 
     # Show one button for each field.
     for i, row in enumerate(st.session_state.board):
-        cols = st.beta_columns([0.2, 0.1, 0.1, 0.7])
+        cols = st.beta_columns([0.2, 0.1, 0.1, 0.5])
         for j, field in enumerate(row):
             cols[j].button(
                 field,
