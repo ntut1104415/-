@@ -40,7 +40,7 @@ def show():
 
     # Initialize state.
     if "board" not in st.session_state:
-        st.session_state.board = np.full((5, 5), ".", dtype=str)
+        st.session_state.board = np.full((5, 5), "*", dtype=str)
         st.session_state.next_player = "X"
         st.session_state.winner = None
 
