@@ -33,13 +33,13 @@ def checkWin(board): #檢查勝利
         result2 = checkcolumns(newBoard)
         if result2:
             return result2
-    return checkDiagonals(newBoard)
+    return checkDiagonals(newBoard)#board
 
 
 def show():
     st.write(
         """
-        ## 🎮 Tic Tac Toe
+        ## 🎮 Tic Tac Toe 🎮
         
         Let's play! This demo stores the entire game state (as a dict) in 
         `st.session_state` and uses the new callbacks to handle button clicks.
@@ -67,7 +67,7 @@ def show():
 
     # Show one button for each field.為每個字段顯示一個按鈕。
     for i, row in enumerate(st.session_state.board):
-        cols = st.columns([0.1, 0.1, 0.1, 0.1, 0.1])
+        cols = st.columns([0, 0, 0, 0, 0])
         for j, field in enumerate(row):
             cols[j].button(
                 field,
