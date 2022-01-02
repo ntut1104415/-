@@ -29,10 +29,10 @@ def checkWin(board): #檢查勝利
     for newBoard in [board, np.transpose(board)]:
         result1 = checkRows(newBoard)
         if result1:
-            return result2  
-        result2 = checkRows(newBoard)
+            return result1  
+        result2 = checkcolumns(newBoard)
         if result2:
-            return result1
+            return result2
     return checkDiagonals(board)
 
 
