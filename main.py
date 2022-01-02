@@ -67,7 +67,7 @@ def show():
 
     # Show one button for each field.為每個字段顯示一個按鈕。
     for i, row in enumerate(st.session_state.board):
-        cols = st.columns([0, 0, 0, 0, 0])
+        cols = st.columns([0.1, 0.1, 0.1, 0.1, 0.6])
         for j, field in enumerate(row):
             cols[j].button(
                 field,
