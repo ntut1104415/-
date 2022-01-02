@@ -30,7 +30,7 @@ def checkWin(board): #檢查勝利
 def show():
     st.write(
         """
-        ## 👾 Tic Tac Toe
+        ## 🎮 Tic Tac Toe
         
         Let's play! This demo stores the entire game state (as a dict) in 
         `st.session_state` and uses the new callbacks to handle button clicks.
@@ -68,7 +68,7 @@ def show():
             )
 
     if st.session_state.winner:
-        st.success(f"Congrats! {st.session_state.winner} won the game! 🎈")
+        st.success(f"🏆Congrats! {st.session_state.winner} won the game! 🏆")
 
 
 if __name__ == "__main__":
