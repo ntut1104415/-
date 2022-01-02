@@ -30,7 +30,7 @@ def checkWin(board): #檢查勝利
         result1 = checkRows(newBoard)
         if result1:
             return result1  
-        result2 = checkcolumns(newBoard)
+        result2 = checkcolumns(Board)
         if result2:
             return result2
     return checkDiagonals(board)
