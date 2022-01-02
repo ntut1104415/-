@@ -9,7 +9,7 @@ def checkRows(board): #檢查行
             return row[0]
     return None
 
-def checkcolumns(board): #檢查列
+def checkcolumns(board): #檢查列(X)
     for columns in board:
         if len(set(columns)) == 1:
             return columns[0]
@@ -30,10 +30,10 @@ def checkWin(board): #檢查勝利
         result1 = checkRows(newBoard)#newBoard
         if result1:
             return result1  
-        #result2 = checkcolumns(newBoard)
-        #if result2:
-            #return result2
-    return checkcolumns(newBoard)        
+        result2 = checkcolumns(newBoard)#(X)
+        if result2:
+            return result2
+    #return checkcolumns(newBoard)#(X)        
     return checkDiagonals(newBoard)#board
 
 
