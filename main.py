@@ -41,7 +41,7 @@ def show():
     # Initialize state.初始化狀態。
     if "board" not in st.session_state:
         st.session_state.board = np.full((5, 5), "*", dtype=str)
-        st.session_state.next_player = "X"
+        st.session_state.next_player = "🐶"
         st.session_state.winner = None
 
     # Define callbacks to handle button clicks.定義回調來處理按鈕點擊。
@@ -50,7 +50,7 @@ def show():
             # TODO: Handle the case when nobody wins but the game is over!TODO：處理沒有人贏但遊戲結束的情況！
             st.session_state.board[i, j] = st.session_state.next_player
             st.session_state.next_player = (
-                "O" if st.session_state.next_player == "X" else "X"
+                "🐱" if st.session_state.next_player == "🐶" else "🐶"
             )
             winner = checkWin(st.session_state.board)
             if winner != "*":
