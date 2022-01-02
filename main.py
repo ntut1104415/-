@@ -27,7 +27,7 @@ def checkWin(board):
     return checkDiagonals(board)
 
 
-def show():
+#def show():
     st.write(
         """
         ## 👾 Tic Tac Toe
