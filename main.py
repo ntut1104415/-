@@ -9,6 +9,12 @@ def checkRows(board): #檢查行
             return row[0]
     return None
 
+def checkcolumns(board): #檢查列
+    for columns in board:
+        if len(set(columns)) == 1:
+            return columns[0]
+    return None
+
 
 def checkDiagonals(board):#檢查對角線
     if len(set([board[i][i] for i in range(len(board))])) == 1:
