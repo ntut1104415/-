@@ -40,7 +40,7 @@ def show():
 
     # Initialize state.
     if "board" not in st.session_state:
-        st.session_state.board = np.full((5, 5), ".", dtype=str)
+        st.session_state.board = np.full((5, 5), "*", dtype=str)
         st.session_state.next_player = "X"
         st.session_state.winner = None
 
@@ -53,7 +53,7 @@ def show():
                 "O" if st.session_state.next_player == "X" else "X"
             )
             winner = checkWin(st.session_state.board)
-            if winner != ".":
+            if winner != "*":
                 st.session_state.winner = winner
 
     # Show one button for each field.
