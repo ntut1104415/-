@@ -27,9 +27,12 @@ def checkDiagonals(board):#檢查對角線
 def checkWin(board): #檢查勝利
     # transposition to check rows, then columns檢查行列
     for newBoard in [board, np.transpose(board)]:
-        result = checkRows(newBoard)
-        if result:
-            return result
+        result1 = checkRows(newBoard)
+        if result1:
+            return result1  
+        result2 = checkRows(newBoard)
+        if result2:
+            return result2
     return checkDiagonals(board)
 
 
