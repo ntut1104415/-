@@ -57,14 +57,14 @@ def show():
                 st.session_state.winner = winner
 
     # Show one button for each field.為每個字段顯示一個按鈕。
-    for i, row in enumerate(st.session_state.board):
+    for j, row in enumerate(st.session_state.board):
         cols = st.row([0.1, 0.1, 0.1, 0.1, 0.1])
-        for j, field in enumerate(columns):
-            cols[j].button(
+        for i, field in enumerate(columns):
+            cols[i].button(
                 field,
-                key=f"{i}-{j}",
+                key=f"{j}-{i}",
                 on_click=handle_click,
-                args=(i, j),
+                args=(j, i),
             )
 
     if st.session_state.winner:
