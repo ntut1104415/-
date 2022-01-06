@@ -50,7 +50,6 @@ def show():
         `st.session_state` and uses the new callbacks to handle button clicks.
         """
     )
-    st.markdown("<h1 style='text-align: center; color: white;'>五子棋遊戲　🏍隨便啦 先孤輪🛵</h1>", unsafe_allow_html=True) 
     st.write("")
 
     # Initialize state.初始化狀態。
