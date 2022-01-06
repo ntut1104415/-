@@ -1,6 +1,10 @@
 import streamlit as st
 import numpy as np
-   
+
+
+ st.set_page_config(layout="wide")
+    menu = ['Image Based', 'URL']
+
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
     for row in board:
@@ -44,7 +48,7 @@ def show():
         `st.session_state` and uses the new callbacks to handle button clicks.
         """
     )
-    st.write("🎮 五子棋遊戲　🏍隨便啦 先孤輪🛵 🎮")
+    st.write("")
 
     # Initialize state.初始化狀態。
     if "board" not in st.session_state:
