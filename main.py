@@ -45,7 +45,7 @@ def checkWin(board): #檢查勝利
 def show():
     st.write(
         """
-        ## 🎮 Tic Tac Toe 🎮       
+        ## 🎮 Tic Tac Toe 🎮 五子棋遊戲　🏍隨便啦 先孤輪🛵      
         Let's play! This demo stores the entire game state (as a dict) in 
         `st.session_state` and uses the new callbacks to handle button clicks.
         """
