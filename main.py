@@ -2,8 +2,8 @@ import streamlit as st
 import numpy as np
 
 
-menu = ['Image Based', 'URL']
-st.sidebar.header('照片上傳選擇')
+menu = ['🐶', '🐱']
+st.sidebar.header('P1選擇')
 choice = st.sidebar.selectbox('選擇上傳方式 ?', menu)
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
