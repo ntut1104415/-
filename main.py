@@ -5,8 +5,8 @@ import numpy as np
 menu = ['🐶', '🐱']
 st.sidebar.header('P1選擇')
 choice1 = st.sidebar.selectbox('選擇角色 ?', menu)
-    st.sidebar.header('P2選擇')
-    choice2 = st.sidebar.selectbox('選擇角色 ?', menu)
+#st.sidebar.header('P2選擇')
+#choice2 = st.sidebar.selectbox('選擇角色 ?', menu)
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
     for row in board:
