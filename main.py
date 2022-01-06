@@ -1,12 +1,6 @@
 import streamlit as st
 import numpy as np
-
-def main():
-    st.set_page_config(layout="wide")
-    menu = ['🐱', '🐶'] 
-    st.sidebar.header('P1')
-    st.sidebar.selectbox('選擇',menu)
-    
+   
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
     for row in board:
