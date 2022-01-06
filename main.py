@@ -46,7 +46,7 @@ def show():
     st.write(
         """
         ## 🎮 Tic Tac Toe 🎮
-        
+st.markdown("<h1 style='text-align: center; color: white;'>五子棋遊戲　🏍隨便啦 先孤輪🛵</h1>", unsafe_allow_html=True)        
         Let's play! This demo stores the entire game state (as a dict) in 
         `st.session_state` and uses the new callbacks to handle button clicks.
         """
