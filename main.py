@@ -1,9 +1,8 @@
 import streamlit as st
 import numpy as np
 
-
- st.set_page_config(layout="wide")
-    menu = ['Image Based', 'URL']
+st.set_page_config(layout="wide")
+menu = ['Image Based', 'URL']
 
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
