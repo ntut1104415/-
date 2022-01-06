@@ -50,7 +50,7 @@ def show():
     # Initialize state.初始化狀態。
     if "board" not in st.session_state:
         st.session_state.board = np.full((5, 5), "*", dtype=str)
-        st.session_state.next_player = "choice1"
+        st.session_state.next_player = "🐶"
         st.session_state.winner = None
 
     # Define callbacks to handle button clicks.定義回調來處理按鈕點擊。
