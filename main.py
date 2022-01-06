@@ -4,7 +4,7 @@ import numpy as np
 
 menu = ['🐶', '🐱']
 st.sidebar.header('P1選擇')
-choice = st.sidebar.selectbox('選擇上傳方式 ?', menu)
+choice = st.sidebar.selectbox('選擇角色 ?', menu)
 # From: https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
 def checkRows(board): #檢查行
     for row in board:
