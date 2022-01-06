@@ -44,7 +44,7 @@ def show():
         `st.session_state` and uses the new callbacks to handle button clicks.
         """
     )
-    st.write("")
+    st.write("🎮 五子棋遊戲　🏍隨便啦 先孤輪🛵 🎮")
 
     # Initialize state.初始化狀態。
     if "board" not in st.session_state:
